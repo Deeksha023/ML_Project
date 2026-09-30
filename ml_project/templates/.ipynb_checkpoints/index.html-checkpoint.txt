@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>House Value</title>
+</head>
+
+<body>
+
+    <form action="{{ url_for('get_value') }}" method="POST">
+
+        <h3>Predict House Value</h3>
+
+        <p>
+            RM (Average number of rooms)<br>
+            <input type="number" step="any" name="rm"
+                   placeholder="e.g. 6.57" required>
+        </p>
+
+        <p>
+            PT (Pupil-Teacher Ratio)<br>
+            <input type="number" step="any" name="pt"
+                   placeholder="e.g. 15.3" required>
+        </p>
+
+        <p>
+            LSTAT (% lower status population)<br>
+            <input type="number" step="any" name="lstat"
+                   placeholder="e.g. 4.98" required>
+        </p>
+
+        <input type="submit" value="Predict">
+
+    </form>
+
+    <hr>
+
+    <p>
+        <small>Result shown on next page</small>
+    </p>
+
+</body>
+</html>

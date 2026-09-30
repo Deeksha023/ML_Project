@@ -1,0 +1,5 @@
+<html>
+    <body>
+        <div>
+            <h1><spam>predicted price:-</spam>({prediction)}<spam>dollers</spam></h1>
+        </div>
